@@ -1,6 +1,4 @@
 [workspace]
 resolver = "1"
 
-members = [ "export_ts_types",
-    "web_server"
-]
+members = ["export-ts-types", "web-server"]

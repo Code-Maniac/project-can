@@ -1,0 +1,9 @@
+[submodule "web-server"]
+	path = web-server
+	url = git@github.com:Code-Maniac/project-can-web-server.git
+[submodule "export-ts-types"]
+	path = export-ts-types
+	url = git@github.com:Code-Maniac/export-ts-types.git
+[submodule "frontend"]
+	path = frontend
+	url = git@github.com:Code-Maniac/project-can-frontend.git
