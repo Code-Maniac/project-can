@@ -1,0 +1,46 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node-terminal",
+      "name": "Next.js Dev",
+      "request": "launch",
+      "command": "npm run dev",
+      "cwd": "${workspaceFolder}/frontend",
+    },
+    {
+      "name": "Chrome",
+      "type": "chrome",
+      "request": "launch",
+      "url": "http://localhost:3000",
+      "webRoot": "${workspaceFolder}/frontend",
+    },
+    {
+      "name": "Edge",
+      "type": "msedge",
+      "request": "launch",
+      "url": "http://localhost:3000",
+      "webRoot": "${workspaceFolder}/frontend",
+    },
+    {
+      "name": "Debug web-server",
+      "type": "lldb",
+      "request": "launch",
+      "program": "${workspaceFolder}/target/debug/web-server",
+      "args": [],
+      "cwd": "${workspaceFolder}",
+      "sourceLanguages": ["rust"],
+      "preLaunchTask": "cargo build web-server",
+    },
+    {
+      "name": "Debug export-ts-types",
+      "type": "lldb",
+      "request": "launch",
+      "program": "${workspaceFolder}/target/debug/export-ts-types",
+      "args": [],
+      "cwd": "${workspaceFolder}",
+      "sourceLanguages": ["rust"],
+      "preLaunchTask": "cargo build export-ts-types"
+    }
+  ]
+}

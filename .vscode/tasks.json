@@ -1,0 +1,35 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "cargo build web-server",
+      "type": "shell",
+      "command": "cargo build -p web-server",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": ["$rustc"],
+    },
+    {
+      "label": "cargo build export-ts-types",
+      "type": "shell",
+      "command": "cargo build -p export-ts-types",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": ["$rustc"],
+    },
+    {
+      "label": "Run export-ts-types",
+      "type": "shell",
+      "command": "cargo run --bin export-ts-types",
+      "group": {
+        "kind": "build",
+        "isDefault": false
+      },
+      "problemMatcher": ["$rustc"]
+    }
+  ]
+}
